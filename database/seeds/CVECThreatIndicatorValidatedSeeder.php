@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
-
+use App\CVECThreatIndicatorValidated;
 class CVECThreatIndicatorValidatedSeeder extends Seeder
 {
     /**
@@ -12,5 +12,112 @@ class CVECThreatIndicatorValidatedSeeder extends Seeder
     public function run()
     {
         //
+        $threatIndicatorsValidated = [
+            [
+                'validatedValue'=>3.75,
+                'cvectThreatIndicatorID'=>1,
+            ],
+            [
+                'validatedValue'=>4.25,
+                'cvectThreatIndicatorID'=>2,
+            ],
+            [
+                'validatedValue'=>3.25,
+                'cvectThreatIndicatorID'=>3,
+            ],
+            [
+                'validatedValue'=>2.25,
+                'cvectThreatIndicatorID'=>4,
+            ],
+            [
+                'validatedValue'=>4.25,
+                'cvectThreatIndicatorID'=>5,
+            ],
+            [
+                'validatedValue'=>3.75,
+                'cvectThreatIndicatorID'=>6,
+            ],
+            [
+                'validatedValue'=>2.25,
+                'cvectThreatIndicatorID'=>7,
+            ],
+            [
+                'validatedValue'=>1.25,
+                'cvectThreatIndicatorID'=>8,
+            ],
+            [
+                'validatedValue'=>0.25,
+                'cvectThreatIndicatorID'=>9,
+            ],
+            [
+                'validatedValue'=>0.45,
+                'cvectThreatIndicatorID'=>10,
+            ],
+            [
+                'validatedValue'=>1.25,
+                'cvectThreatIndicatorID'=>11,
+            ],
+            [
+                'validatedValue'=>2.25,
+                'cvectThreatIndicatorID'=>12,
+            ],
+            [
+                'validatedValue'=>4.25,
+                'cvectThreatIndicatorID'=>13,
+            ],
+            [
+                'validatedValue'=>1.55,
+                'cvectThreatIndicatorID'=>14,
+            ],
+            [
+                'validatedValue'=>3.55,
+                'cvectThreatIndicatorID'=>15,
+            ],
+            [
+                'validatedValue'=>3.55,
+                'cvectThreatIndicatorID'=>15,
+            ],
+            [
+                'validatedValue'=>1.55,
+                'cvectThreatIndicatorID'=>16,
+            ],
+            [
+                'validatedValue'=>1.55,
+                'cvectThreatIndicatorID'=>17,
+            ],
+            [
+                'validatedValue'=>3.55,
+                'cvectThreatIndicatorID'=>18,
+            ],
+            [
+                'validatedValue'=>1.55,
+                'cvectThreatIndicatorID'=>19,
+            ],
+            [
+                'validatedValue'=>1.55,
+                'cvectThreatIndicatorID'=>20,
+            ],
+            [
+                'validatedValue'=>4.25,
+                'cvectThreatIndicatorID'=>21,
+            ],
+            [
+                'validatedValue'=>1.25,
+                'cvectThreatIndicatorID'=>22,
+            ],
+            [
+                'validatedValue'=>1.25,
+                'cvectThreatIndicatorID'=>23,
+            ],
+            [
+                'validatedValue'=>2.75,
+                'cvectThreatIndicatorID'=>24,
+            ],
+        ];
+        foreach($threatIndicatorsValidated as $key => $value){
+
+            CVECThreatIndicatorValidated::create($value);            
+
+        }
     }
 }

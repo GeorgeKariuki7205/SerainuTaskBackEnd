@@ -11,6 +11,9 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // $this->call(UserSeeder::class);
+        $this->call(IndicatorSeeder::class);
+        $this->call(CVECThreatIndicatorSeeder::class);
+        $this->call(CVECThreatIndicatorDetectedSeeder::class);
+        $this->call(CVECThreatIndicatorValidatedSeeder::class);
     }
 }

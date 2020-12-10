@@ -14,7 +14,10 @@ class CreateIndicatorsTable extends Migration
     public function up()
     {
         Schema::create('indicators', function (Blueprint $table) {
+            $table->engine = "InnoDB";
             $table->id();
+            $table->longText('name');
+            $table->longText('description')->nullable();
             $table->timestamps();
         });
     }

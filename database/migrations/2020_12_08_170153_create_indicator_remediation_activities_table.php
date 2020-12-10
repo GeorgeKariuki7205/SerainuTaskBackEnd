@@ -14,7 +14,11 @@ class CreateIndicatorRemediationActivitiesTable extends Migration
     public function up()
     {
         Schema::create('indicator_remediation_activities', function (Blueprint $table) {
+            $table->engine = "InnoDB";
             $table->id();
+            $table->bigInteger('indicatorsId')->unsigned();
+            $table->foreign('indicatorsId')->references('id')->on('indicators')->onDelete('cascade')->onUpdate('cascade');
+            $table->longText('description');
             $table->timestamps();
         });
     }

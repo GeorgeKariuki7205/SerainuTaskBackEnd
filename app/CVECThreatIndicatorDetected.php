@@ -7,4 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class CVECThreatIndicatorDetected extends Model
 {
     //
+    protected $guarded = ['id']; 
+        
+    protected $table = 'cvec_threat_indicator_detected';
 }

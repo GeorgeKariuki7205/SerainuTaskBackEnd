@@ -13,8 +13,17 @@ class CreateCVECThreatIndicatorsTable extends Migration
      */
     public function up()
     {
-        Schema::create('c_v_e_c_threat_indicators', function (Blueprint $table) {
-            $table->id();
+        Schema::create('cvec_threat_indicators', function (Blueprint $table) {
+            $table->engine = "InnoDB";
+            $table->id();            
+            $table->string('uniqueIdentifier')->unique();
+            $table->mediumText('name');
+            $table->longText('description')->nullable();
+
+
+            $table->bigInteger('indicatorsId')->unsigned();
+            $table->foreign('indicatorsId')->references('id')->on('indicators')->onDelete('cascade')->onUpdate('cascade');
+
             $table->timestamps();
         });
     }
@@ -26,6 +35,6 @@ class CreateCVECThreatIndicatorsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('c_v_e_c_threat_indicators');
+        Schema::dropIfExists('cvec_threat_indicators');
     }
 }
