@@ -18,4 +18,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::post('/fetchData','fetchData\FetchData@fetchData');
+Route::get('/fetchData','fetchData\FetchData@fetchData');

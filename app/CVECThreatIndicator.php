@@ -16,7 +16,7 @@ class CVECThreatIndicator extends Model
         return $this->hasMany('App\CVECThreatIndicatorDetected', 'cvectThreatIndicatorID', 'id');
     }
 
-    public function CVECThreatIndicatorCVECThreatIndicatorValidated()
+    public function CVECThreatIndicatorHasManyCVECThreatIndicatorValidated()
     {
         return $this->hasMany('App\CVECThreatIndicatorValidated', 'cvectThreatIndicatorID', 'id');
     }
