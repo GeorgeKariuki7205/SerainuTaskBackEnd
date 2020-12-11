@@ -10,4 +10,14 @@ class CVECThreatIndicator extends Model
     protected $guarded = ['id']; 
         
     protected $table = 'cvec_threat_indicators';
+
+    public function CVECThreatIndicatorHasManyCVECThreatIndicatorDetected()
+    {
+        return $this->hasMany('App\CVECThreatIndicatorDetected', 'cvectThreatIndicatorID', 'id');
+    }
+
+    public function CVECThreatIndicatorCVECThreatIndicatorValidated()
+    {
+        return $this->hasMany('App\CVECThreatIndicatorValidated', 'cvectThreatIndicatorID', 'id');
+    }
 }
