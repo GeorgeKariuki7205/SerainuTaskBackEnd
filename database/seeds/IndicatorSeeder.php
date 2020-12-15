@@ -15,19 +15,23 @@ class IndicatorSeeder extends Seeder
         $indicators = [
             [
                 'name'=>'User',
-                'description'=>'User Threat Indicator',                
+                'description'=>'User Threat Indicator',
+                'organisation_id' => 1,                
             ],
             [
                 'name'=>'Asset',
-                'description'=>'Asset Threat Indicator',                
+                'description'=>'Asset Threat Indicator',  
+                'organisation_id' => 1,              
             ],
             [
                 'name'=>'Incident',
-                'description'=>'Incident Threat Indicator',                
+                'description'=>'Incident Threat Indicator',
+                'organisation_id' => 1,                
             ],
             [
                 'name'=>'Contuinity',
-                'description'=>'Contuinity Threat Indicator',                
+                'description'=>'Contuinity Threat Indicator', 
+                'organisation_id' => 1,               
             ],            
         ];        
         

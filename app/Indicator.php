@@ -19,4 +19,10 @@ class Indicator extends Model
     {
         return $this->hasMany('App\IndicatorRemediationActivities', 'indicatorsId', 'id');
     }
+
+    public function indicatorBelongsToOrganisation()
+    {
+        return $this->belongsTo('App\Organisation', 'organisation_id', 'id');
+    }
+    
 }

@@ -17,6 +17,8 @@ class CreateIndicatorsTable extends Migration
             $table->engine = "InnoDB";
             $table->id();
             $table->longText('name');
+            $table->bigInteger('organisation_id')->unsigned();
+            $table->foreign('organisation_id')->references('id')->on('organisations')->onDelete('cascade')->onUpdate('cascade');
             $table->longText('description')->nullable();
             $table->timestamps();
         });
