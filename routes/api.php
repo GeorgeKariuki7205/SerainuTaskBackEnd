@@ -21,3 +21,5 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 Route::get('/fetchData','fetchData\FetchData@fetchData');
 
 Route::post('/addingUsers','registeringUsers@creatingUsersWithRoles');
+
+Route::post('/login','LoginController@authenticate');

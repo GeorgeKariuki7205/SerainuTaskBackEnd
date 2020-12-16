@@ -32,6 +32,48 @@ class IndicatorSeeder extends Seeder
                 'name'=>'Contuinity',
                 'description'=>'Contuinity Threat Indicator', 
                 'organisation_id' => 1,               
+            ], 
+
+            [
+                'name'=>'User',
+                'description'=>'User Threat Indicator',
+                'organisation_id' => 2,                
+            ],
+            [
+                'name'=>'Asset',
+                'description'=>'Asset Threat Indicator',  
+                'organisation_id' => 2,              
+            ],
+            [
+                'name'=>'Incident',
+                'description'=>'Incident Threat Indicator',
+                'organisation_id' => 2,                
+            ],
+            [
+                'name'=>'Contuinity',
+                'description'=>'Contuinity Threat Indicator', 
+                'organisation_id' => 2,               
+            ], 
+
+            [
+                'name'=>'User',
+                'description'=>'User Threat Indicator',
+                'organisation_id' => 3,                
+            ],
+            [
+                'name'=>'Asset',
+                'description'=>'Asset Threat Indicator',  
+                'organisation_id' => 3,              
+            ],
+            [
+                'name'=>'Incident',
+                'description'=>'Incident Threat Indicator',
+                'organisation_id' => 3,                
+            ],
+            [
+                'name'=>'Contuinity',
+                'description'=>'Contuinity Threat Indicator', 
+                'organisation_id' => 4,               
             ],            
         ];        
         

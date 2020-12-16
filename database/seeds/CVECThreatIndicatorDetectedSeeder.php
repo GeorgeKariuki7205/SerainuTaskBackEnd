@@ -108,6 +108,106 @@ class CVECThreatIndicatorDetectedSeeder extends Seeder
                 'detectedValue'=>3.50,
                 'cvectThreatIndicatorID'=>24,
             ],
+
+
+            // ! second 
+
+            [
+                'detectedValue'=>4.5,
+                'cvectThreatIndicatorID'=>25,
+            ],
+            [
+                'detectedValue'=>5.0,
+                'cvectThreatIndicatorID'=>26,
+            ],
+            [
+                'detectedValue'=>4.00,
+                'cvectThreatIndicatorID'=>27,
+            ],
+            [
+                'detectedValue'=>3.00,
+                'cvectThreatIndicatorID'=>28,
+            ],
+            [
+                'detectedValue'=>5.00,
+                'cvectThreatIndicatorID'=>29,
+            ],
+            [
+                'detectedValue'=>4.50,
+                'cvectThreatIndicatorID'=>30,
+            ],
+            [
+                'detectedValue'=>3.00,
+                'cvectThreatIndicatorID'=>31,
+            ],
+            [
+                'detectedValue'=>2.00,
+                'cvectThreatIndicatorID'=>32,
+            ],
+            [
+                'detectedValue'=>1.00,
+                'cvectThreatIndicatorID'=>33,
+            ],
+            [
+                'detectedValue'=>1.20,
+                'cvectThreatIndicatorID'=>34,
+            ],
+            [
+                'detectedValue'=>2.0,
+                'cvectThreatIndicatorID'=>35,
+            ],
+            [
+                'detectedValue'=>3.0,
+                'cvectThreatIndicatorID'=>36,
+            ],
+            [
+                'detectedValue'=>5.0,
+                'cvectThreatIndicatorID'=>37,
+            ],
+            [
+                'detectedValue'=>2.3,
+                'cvectThreatIndicatorID'=>38,
+            ],
+            [
+                'detectedValue'=>4.3,
+                'cvectThreatIndicatorID'=>39,
+            ],
+            [
+                'detectedValue'=>2.3,
+                'cvectThreatIndicatorID'=>40,
+            ],
+            [
+                'detectedValue'=>2.3,
+                'cvectThreatIndicatorID'=>41,
+            ],
+            [
+                'detectedValue'=>4.3,
+                'cvectThreatIndicatorID'=>42,
+            ],
+            [
+                'detectedValue'=>2.3,
+                'cvectThreatIndicatorID'=>43,
+            ],
+            [
+                'detectedValue'=>2.3,
+                'cvectThreatIndicatorID'=>44,
+            ],
+            [
+                'detectedValue'=>5.00,
+                'cvectThreatIndicatorID'=>45,
+            ],
+            [
+                'detectedValue'=>2.00,
+                'cvectThreatIndicatorID'=>46,
+            ],
+            [
+                'detectedValue'=>2.00,
+                'cvectThreatIndicatorID'=>47,
+            ],
+            [
+                'detectedValue'=>3.50,
+                'cvectThreatIndicatorID'=>48,
+            ],
             
         ];
 

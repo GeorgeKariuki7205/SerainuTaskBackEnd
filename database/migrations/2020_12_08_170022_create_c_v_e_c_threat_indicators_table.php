@@ -16,7 +16,7 @@ class CreateCVECThreatIndicatorsTable extends Migration
         Schema::create('cvec_threat_indicators', function (Blueprint $table) {
             $table->engine = "InnoDB";
             $table->id();            
-            $table->string('uniqueIdentifier')->unique();
+            $table->string('uniqueIdentifier');
             $table->mediumText('name');
             $table->longText('description')->nullable();
 

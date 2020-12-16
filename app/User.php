@@ -37,4 +37,9 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function userbelongsToOrganisation()
+    {
+        return $this->belongsTo('App\Organisation', 'organisation_id', 'id');
+    }
 }

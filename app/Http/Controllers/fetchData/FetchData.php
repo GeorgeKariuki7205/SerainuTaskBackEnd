@@ -21,6 +21,7 @@ class FetchData extends Controller
         $allIndicators = Indicator::all();
 
         $responseData = array();
+        $indicators = array();
         foreach ($allIndicators as $allIndicator) {
             # code...
             $indicatorToPushToResponse = array();
@@ -63,11 +64,11 @@ class FetchData extends Controller
             }
             
             $indicatorToPushToResponse['CVECThreatIndicators'] = $CVECThreatIndicatorsCombinationArray;
-            array_push($responseData,$indicatorToPushToResponse);
+            array_push($indicators,$indicatorToPushToResponse);
 
         }
 
-        
+        $responseData['indicators'] = $indicators;
 
         return $responseData;
     }
